@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>Calendar Generator</h1>
+            <p class="subtitle">Enter a year and generate a month-by-month calendar.</p>
+        </header>
+
+        <div class="card controls">
+            <label for="year" class="year-label">YEAR:</label>
+            <input
+                type="text"
+                name="year"
+                id="year"
+                class="year-input"
+                placeholder="YEAR ABOVE 400"
+                inputmode="numeric"
+                autocomplete="off"
+            >
+            <input type="button" class="submit-btn" value="Submit" onclick="display()">
+        </div>
+
+        <div class="card output-card">
+            <pre id="output" aria-live="polite"></pre>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
